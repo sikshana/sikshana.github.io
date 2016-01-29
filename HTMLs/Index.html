@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KG Brain teasers</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Bootstrap/bootstrap.css" />
+    <script type="text/javascript" src="../JS/jQuery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../JS/Bootstrap/bootstrap.js"></script>
+    <!--Custom CSS and JS-->
+    <link rel="stylesheet" type="text/css" href="../CSS/Custom/Sikshana.css" />
+    <script type="text/javascript" src="../JS/Custom/Sikshana.js">
+    </script>
+</head>
+<body>
+    <header id="header">
+        <h1 class="text-center">Kindergarten Brain Teasers</h1>
+        <!--<nav class="navbar navbar-inverse">
+            <div class="container-fluid">               
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#" onclick="Sikshana.Main.Reload();">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Math
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html',[[0, 99], [0, 10]]);">Additions</a></li>                               
+                            </ul>
+                        </li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>-->
+    </header>
+    <div class="container-fluid">
+        <div class="row text-right">
+            <span id="displayClock" class="clockStyle"></span>
+        </div>
+        <div  id="dynamicContent">
+        </div>
+    </div>        
+    <footer id="footer">
+        <h6>All rights reserved.</h6>
+    </footer>
+</body>
+</html>
+<script type="text/javascript">
+    Sikshana.Main.StartUp();
+    Sikshana.Utils.RenderTime();
+</script>

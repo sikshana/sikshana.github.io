@@ -1,0 +1,28 @@
+﻿.dl-horizontal dt {
+    width: 300px;
+}
+.DescTitle {
+    margin-bottom:20px;   
+}
+.SingleDescTitle {
+    margin-bottom:20px;   
+    margin-top: 5%;
+    margin-left:40%;
+    font-size: 40px;
+    font-weight: normal;    
+    text-align:center;   
+}
+
+.SingleDescDef {    
+    margin-top: 5.5%; 
+    font-size: 20px;   
+}
+.clockStyle {
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 10px;
+    color:blue;
+    font-weight: bold;    
+    font-style: italic;
+    text-align: center;
+}
