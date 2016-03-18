@@ -1,159 +1,493 @@
 ﻿
-<div class="row text-center">
-    <h1>Additions</h1>
-</div>
 <!--Additions-->
-<div class="row">
-    <div class="col-md-2">
-        <div class="row">
-            <h4 class="bg-primary text-danger text-center">1 - Digit</h4>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html',[[0, 9], [0, 9]], 1,'+');">1 digit - 1 digit</a>
-        </div>
-        <div>            
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[0, 9], [10, 99]], 1, '+');">1 digit - 2 digits</a>
-        </div>
-        <div>            
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[0, 9], [100, 999]], 1, '+');">1 digit - 3 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[0, 9], [1000, 9999]], 1, '+');">1 digit - 4 digits</a>
-        </div>
-    </div>
+<div class="panel-group" id="accordion">
+    <div class="row">
+        <div class="col-md-2 col-xs-12 text-center">
+            <h1>Additions</h1>
 
-    <div class="col-md-offset-1 col-md-2">
-        <div class="row">
-            <h4 class="bg-primary text-danger text-center">2 - Digits</h4>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[10, 99], [0, 9]], 1, '+');">2 digits - 1 digit</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[10, 99], [10, 99]], 1, '+');">2 digits - 2 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[10, 99], [100, 999]], 1, '+');">2 digits - 3 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[10, 99], [1000, 9999]], 1, '+');">2 digits - 4 digits</a>
-        </div>
-    </div>
+            <h4 class="bg-success text-success">Simple Additions</h4>
+            
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#1DigitAdditions">1 - Digit</a>
+                        </h4>
+                    </div>
+                    <div id="1DigitAdditions" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [0, 9]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">1 digit - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [10, 99]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">1 digit - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [100, 999]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">1 digit - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [1000, 9999]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">1 digit - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <div class="col-md-offset-1 col-md-2">
-        <div class="row">
-            <h4 class="bg-primary text-danger text-center">3 - Digits</h4>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[100, 999], [0, 9]], 1, '+');">3 digits - 1 digit</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[100, 999], [10, 99]], 1, '+');">3 digits - 2 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[100, 999], [100, 999]], 1, '+');">3 digits - 3 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[100, 999], [1000, 9999]], 1, '+');">3 digits - 4 digits</a>
-        </div>
-    </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#2DigitAdditions">2 - Digits</a>
+                        </h4>
+                    </div>
+                    <div id="2DigitAdditions" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [0, 9]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">2 digits - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [10, 99]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">2 digits - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [100, 999]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">2 digits - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [1000, 9999]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">2 digits - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <div class="col-md-offset-1 col-md-2">
-        <div class="row">
-            <h4 class="bg-primary text-danger text-center">4 - Digits</h4>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[1000, 9999], [0, 9]], 1, '+');">4 digits - 1 digit</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[1000, 9999], [10, 99]], 1, '+');">4 digits - 2 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[1000, 0999], [100, 999]], 1, '+');">4 digits - 3 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[1000, 9999], [1000, 9999]], 1, '+');">4 digits - 4 digits</a>
-        </div>
-    </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#3DigitAdditions">3 - Digits</a>
+                        </h4>
+                    </div>
+                    <div id="3DigitAdditions" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [0, 9]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">3 digits - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [10, 99]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">3 digits - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [100, 999]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">3 digits - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [1000, 9999]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">3 digits - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#4DigitAdditions">4 - Digits</a>
+                        </h4>
+                    </div>
+                    <div id="4DigitAdditions" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999], [0, 9]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">4 digits - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999], [10, 99]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">4 digits - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 0999], [100, 999]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">4 digits - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999], [1000, 9999]], MathSymbol.Addition, MathType.SimpleAddAndSubtrations);">4 digits - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="bg-success text-success">Missing addend</h4>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#1DigitMissingAddEnd">1 - Digit</a>
+                        </h4>
+                    </div>
+                    <div id="1DigitMissingAddEnd" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [0, 9]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">1 digit - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [10, 99]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">1 digit - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [100, 999]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">1 digit - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [1000, 9999]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">1 digit - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#2DigitMissingAddEnd">2 - Digits</a>
+                        </h4>
+                    </div>
+                    <div id="2DigitMissingAddEnd" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [0, 9]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">2 digits - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [10, 99]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">2 digits - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [100, 999]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">2 digits - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [1000, 9999]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">2 digits - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#3DigitMissingAddEnd">3 - Digits</a>
+                        </h4>
+                    </div>
+                    <div id="3DigitMissingAddEnd" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [0, 9]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">3 digits - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [10, 99]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">3 digits - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [100, 999]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">3 digits - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [1000, 9999]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">3 digits - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#4DigitMissingAddEnd">4 - Digits</a>
+                        </h4>
+                    </div>
+                    <div id="4DigitMissingAddEnd" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999], [0, 9]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">4 digits - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999], [10, 99]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">4 digits - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999], [100, 999]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">4 digits - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999], [1000, 9999]], MathSymbol.Addition, MathType.MissingAddOrSubrahend);">4 digits - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="bg-success text-success">Expanded Form</h4>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#ExpandedFormAddition">Expanded Form Addition</a>
+                        </h4>
+                    </div>
+                    <div id="ExpandedFormAddition" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99]], MathSymbol.Addition, MathType.ExpandedForm);">2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999]], MathSymbol.Addition, MathType.ExpandedForm);">3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999]], MathSymbol.Addition, MathType.ExpandedForm);">4 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10000, 99999]], MathSymbol.Addition, MathType.ExpandedForm);">5 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>   
+
+        <div class="col-md-offset-1 col-md-2 col-xs-12 text-center">
+            <h1>Subtractions</h1>
+            <h4 class="bg-success text-success">Simple Subtractions</h4>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#1DigitSubtractions">1 - Digit</a>
+                        </h4>
+                    </div>
+                    <div id="1DigitSubtractions" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [0, 9]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">1 digit - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [10, 99]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">1 digit - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [100, 999]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">1 digit - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [1000, 9999]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">1 digit - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#2DigitSubtractions">2 - Digits</a>
+                        </h4>
+                    </div>
+                    <div id="2DigitSubtractions" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [0, 9]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">2 digits - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [10, 99]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">2 digits - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [100, 999]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">2 digits - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [1000, 9999]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">2 digits - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#3DigitSubtractions">3 - Digits</a>
+                        </h4>
+                    </div>
+                    <div id="3DigitSubtractions" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [0, 9]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">3 digits - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [10, 99]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">3 digits - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [100, 999]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">3 digits - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [1000, 9999]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">3 digits - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#4DigitSubtractions">4 - Digits</a>
+                        </h4>
+                    </div>
+                    <div id="4DigitSubtractions" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999], [0, 9]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">4 digits - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999], [10, 99]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">4 digits - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 0999], [100, 999]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">4 digits - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999], [1000, 9999]], MathSymbol.Subtraction, MathType.SimpleAddAndSubtrations);">4 digits - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <h4 class="bg-success text-success">Missing Subtrahend</h4>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#1DigitMissingSubtrahend">1 - Digit</a>
+                        </h4>
+                    </div>
+                    <div id="1DigitMissingSubtrahend" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [0, 9]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">1 digit - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [10, 99]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">1 digit - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [100, 999]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">1 digit - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9], [1000, 9999]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">1 digit - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#2DigitMissingSubtrahend">2 - Digits</a>
+                        </h4>
+                    </div>
+                    <div id="2DigitMissingSubtrahend" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [0, 9]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">2 digits - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [10, 99]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">2 digits - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [100, 999]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">2 digits - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99], [1000, 9999]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">2 digits - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#3DigitMissingSubtrahend">3 - Digits</a>
+                        </h4>
+                    </div>
+                    <div id="3DigitMissingSubtrahend" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [0, 9]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">3 digits - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [10, 99]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">3 digits - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [100, 999]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">3 digits - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999], [1000, 9999]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">3 digits - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#4DigitMissingSubtrahend">4 - Digits</a>
+                        </h4>
+                    </div>
+                    <div id="4DigitMissingSubtrahend" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999], [0, 9]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">4 digits - 1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999], [10, 99]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">4 digits - 2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999], [100, 999]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">4 digits - 3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999], [1000, 9999]], MathSymbol.Subtraction, MathType.MissingAddOrSubrahend);">4 digits - 4 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="bg-success text-success">Expanded Form</h4>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div>
+                        <h4 class="bg-primary text-center">
+                            <a data-toggle="collapse" class="text-danger" data-parent="#accordion" href="#ExpandedFormSubtraction">Expanded Form Subtraction</a>
+                        </h4>
+                    </div>
+                    <div id="ExpandedFormSubtraction" class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[0, 9]], MathSymbol.Subtraction, MathType.ExpandedForm);">1 digit</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10, 99]], MathSymbol.Subtraction, MathType.ExpandedForm);">2 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[100, 999]], MathSymbol.Subtraction, MathType.ExpandedForm);">3 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[1000, 9999]], MathSymbol.Subtraction, MathType.ExpandedForm);">4 digits</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="Sikshana.KinderGarten.DynamicLoadMath(HTMLPages.KGSimpleMath, [[10000, 99999]], MathSymbol.Subtraction, MathType.ExpandedForm);">5 digits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>    
+                
+    </div>
 </div>
-
-<div class="row text-center">
-    <h1>Subtractions</h1>
-</div>
-<!--Subtractions-->
-<div class="row">
-    <div class="col-md-2">
-        <div class="row">
-            <h4 class="bg-primary text-danger text-center">1 - Digit</h4>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html',[[0, 9], [0, 9]], 1,'-');">1 digit - 1 digit</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[0, 9], [10, 99]], 1, '-');">1 digit - 2 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[0, 9], [100, 999]], 1, '-');">1 digit - 3 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[0, 9], [1000, 9999]], 1, '-');">1 digit - 4 digits</a>
-        </div>
-    </div>
-
-    <div class="col-md-offset-1 col-md-2">
-        <div class="row">
-            <h4 class="bg-primary text-danger text-center">2 - Digits</h4>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[10, 99], [0, 9]], 1, '-');">2 digits - 1 digit</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[10, 99], [10, 99]], 1, '-');">2 digits - 2 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[10, 99], [100, 999]], 1, '-');">2 digits - 3 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[10, 99], [1000, 9999]], 1, '-');">2 digits - 4 digits</a>
-        </div>
-    </div>
-
-    <div class="col-md-offset-1 col-md-2">
-        <div class="row">
-            <h4 class="bg-primary text-danger text-center">3 - Digits</h4>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[100, 999], [0, 9]], 1, '-');">3 digits - 1 digit</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[100, 999], [10, 99]], 1, '-');">3 digits - 2 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[100, 999], [100, 999]], 1, '-');">3 digits - 3 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[100, 999], [1000, 9999]], 1, '-');">3 digits - 4 digits</a>
-        </div>
-    </div>
-
-    <div class="col-md-offset-1 col-md-2">
-        <div class="row">
-            <h4 class="bg-primary text-danger text-center">4 - Digits</h4>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[1000, 9999], [0, 9]], 1, '-');">4 digits - 1 digit</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[1000, 9999], [10, 99]], 1, '-');">4 digits - 2 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[1000, 0999], [100, 999]], 1, '-');">4 digits - 3 digits</a>
-        </div>
-        <div>
-            <a href="#" onclick="Sikshana.Additions.DynamicLoadContent('Additions/StandardAdditions.html', [[1000, 9999], [1000, 9999]], 1, '-');">4 digits - 4 digits</a>
-        </div>
-    </div>
-
-</div>
-
