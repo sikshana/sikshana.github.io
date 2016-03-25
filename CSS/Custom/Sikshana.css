@@ -1,13 +1,19 @@
 ﻿
+.list-group-item {
+  border: 0px;
+}
+.list-group-submenu {
+  margin-left:20px;
+}
+.navigation-box {    
+    background-color: #fff;
+    border-right: #ddd 1px solid;               
+}
 .labelCustomFontSize {
     font-size: 40px;
 }
-.clockStyle {
-    font-size: 30px;
-    margin: 0 auto;
-    padding: 10px;
-    color:blue;
-    font-weight: bold;    
-    font-style: italic;
-    text-align: center;
+.clockStyle {    
+    font-weight: 200;    
+    color:blue;    
+    padding-right: 25px;    
 }
